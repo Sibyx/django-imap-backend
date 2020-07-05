@@ -1,4 +1,4 @@
-# Django API Forms
+# Django IMAP backend
 
 [![PyPI version](https://badge.fury.io/py/django-imap-backend.svg)](https://badge.fury.io/py/django-imap-backend)
 
