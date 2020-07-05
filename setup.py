@@ -28,7 +28,7 @@ setup(
     license='MIT',
     author='Jakub Dubec',
     author_email='jakub.dubec@gmail.com',
-    description='Declarative Django request validation',
+    description='IMAP back-end for `django.core.mail` package',
     long_description=read_files(['README.md', 'CHANGELOG.md']),
     long_description_content_type='text/markdown',
     keywords=['django', 'mail', 'imap', 'backend', 'mailbox'],
