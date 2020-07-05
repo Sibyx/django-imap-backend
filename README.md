@@ -1,5 +1,7 @@
 # Django API Forms
 
+[![PyPI version](https://badge.fury.io/py/django-imap-backend.svg)](https://badge.fury.io/py/django-imap-backend)
+
 IMAP back-end for `django.core.mail` package, aimed for uploading messages to specif mailbox, instead of sending it
 over SMTP (or other Django email backend). Useful for debugging without fancy services like
 [mailtrap.io](https://mailtrap.io/). Library is capable of uploading messages to multiple accounts at once (one email
@@ -33,9 +35,7 @@ Firstly, have to specify `django_imap_backend.ImapBackend` as your `EMAIL_BACKEN
 add configuration for your mailboxes in `EMAIL_IMAP_MAILBOXES` list. Your's `setings.py` should looks like this:
 
 ```python
-from django_imap_backend import ImapBackend
-
-EMAIL_BACKEND = 'core.mail.imap.ImapBackend'
+EMAIL_BACKEND = 'django_imap_backend.ImapBackend'
 EMAIL_IMAP_MAILBOXES = [
     {
         'HOST': 'imap.example.com',
