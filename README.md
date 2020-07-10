@@ -2,7 +2,7 @@
 
 [![PyPI version](https://badge.fury.io/py/django-imap-backend.svg)](https://badge.fury.io/py/django-imap-backend)
 
-IMAP back-end for `django.core.mail` package, aimed for uploading messages to specif mailbox, instead of sending it
+IMAP back-end for `django.core.mail` package, aimed for uploading messages to specif mailboxes, instead of sending it
 over SMTP (or other Django email backend). Useful for debugging without fancy services like
 [mailtrap.io](https://mailtrap.io/). Library is capable of uploading messages to multiple accounts at once (one email
 to multiple mailboxes or accounts).
@@ -14,7 +14,7 @@ In last few months I worked on project where we have to send a lot of emails to 
 services like [mailtrap](https://mailtrap.io/) (for which we just didn't want to pay, even it's a pretty cool product,
 client's budget is client's budged).
 
-We came up with idea of uploading ready-to-send emails to IMAP user instead of sending it.
+We came up with the idea of uploading ready-to-send emails to IMAP user instead of sending it.
 
 ## Installation
 
@@ -32,11 +32,11 @@ python setup.py install
 ## Configuration
 
 Firstly, have to specify `django_imap_backend.ImapBackend` as your `EMAIL_BACKEND` in `settings.py`. Than you need to
-add configuration for your mailboxes in `EMAIL_IMAP_MAILBOXES` list. Your's `setings.py` should looks like this:
+add configuration for your mailboxes in `EMAIL_IMAP_SECRETS` list. Your's `setings.py` should looks like this:
 
 ```python
 EMAIL_BACKEND = 'django_imap_backend.ImapBackend'
-EMAIL_IMAP_MAILBOXES = [
+EMAIL_IMAP_SECRETS = [
     {
         'HOST': 'imap.example.com',
         'PORT': None,  # default 143 and for SSL 993

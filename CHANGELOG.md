@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0 : 2020-07-10
+
+- **Change**: `EMAIL_IMAP_MAILBOXES` renamed to `EMAIL_IMAP_SECRETS` because of security (we don't wan to show IMAP
+configuration in Django debug mode)
+- **Change**: `sensitive_variables` decoration in IMAP client
+
 ## 0.1.1 : 2020-07-05
 
 Fix PyPi release (shit happens).

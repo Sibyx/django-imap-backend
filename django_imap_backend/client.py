@@ -2,8 +2,11 @@ import imaplib
 import time
 from typing import Dict
 
+from django.views.decorators.debug import sensitive_variables
+
 
 class ImapClient:
+    @sensitive_variables('configuration')
     def __init__(self, configuration: Dict):
         self._user = configuration.get('USER')
         self._password = configuration.get('PASSWORD')
