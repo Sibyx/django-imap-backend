@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2 : 2020-07-19
+
+- **Fix**: Version files update 🤦‍♀️
+
 ## 0.2.1 : 2020-07-19
 
 - **Fix**: Fallback to default `Mailbox` if configuration is not present
