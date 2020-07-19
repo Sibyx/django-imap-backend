@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-imap-backend"
-version = "0.2.2"
+version = "0.2.3"
 description = "IMAP backend for Django mail package"
 authors = ["Jakub Dubec <jakub.dubec@gmail.com>"]
 license = "MIT"

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3 : 2020-07-19
+
+- **Fix**: Version files update 🤦‍♀️ Once again...
+
 ## 0.2.2 : 2020-07-19
 
 - **Fix**: Version files update 🤦‍♀️

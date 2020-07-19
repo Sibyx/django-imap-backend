@@ -10,7 +10,7 @@ class ImapClient:
     def __init__(self, configuration: Dict):
         self._user = configuration.get('USER')
         self._password = configuration.get('PASSWORD')
-        self._mailbox = configuration.get('MAILBOX')
+        self._mailbox = configuration.get('MAILBOX', None)
 
         if configuration.get('SSL', False):
             self._imap = imaplib.IMAP4_SSL(configuration['HOST'])
