@@ -25,11 +25,14 @@ class ImapClient:
             self._imap.login(user=self._user, password=self._password)
 
         # Does the specified mailbox exist?
-        code, response = self._imap.select(self._mailbox)
+        if self._mailbox:
+            code, response = self._imap.select(self._mailbox)
 
-        # If no, create one
-        if code == 'NO':
-            self._imap.create(self._mailbox)
+            # If no, create one
+            if code == 'NO':
+                self._imap.create(self._mailbox)
+
+            self._imap.select(self._mailbox)
 
     def close(self):
         self._imap.close()
