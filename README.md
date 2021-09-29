@@ -7,6 +7,9 @@ over SMTP (or other Django email backend). Useful for debugging without fancy se
 [mailtrap.io](https://mailtrap.io/). Library is capable of uploading messages to multiple accounts at once (one email
 to multiple mailboxes or accounts).
 
+If you like nice diagrams, check this
+[repository map](https://app.codesee.io/maps/cbe2ee60-2175-11ec-96b5-afe99c614d3c).
+
 ## Motivation
 
 In last few months I worked on project where we have to send a lot of emails to different mailboxes. We used fake

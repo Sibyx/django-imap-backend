@@ -34,11 +34,11 @@ setup(
     keywords=['django', 'mail', 'imap', 'backend', 'mailbox'],
     classifiers=[
         # As from https://pypi.python.org/pypi?%3Aaction=list_classifiers
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: Implementation :: PyPy',
         'Framework :: Django :: 2.0',
         'Framework :: Django :: 2.1',
